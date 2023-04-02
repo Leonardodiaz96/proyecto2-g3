@@ -92,19 +92,17 @@ select.addEventListener("change", (event) => {
       (producto) => producto.categoria === event.target.value
     );
   }
-  let elements = productosModificados.map(
-    (element) =>
-      `<li>
-     <img src="https://raw.githubusercontent.com/Leonardodiaz96/proyecto2-g3/main/img-productos/${element.codigo}.jpg" alt="producto" width="400px" />
-     Producto: ${element.nombre}<br>Precio: ${element.precio}<br>Stock: ${element.stock}<br><br></li>`
-  );
-  ul.innerHTML = elements.join().replaceAll(",", "");//me mostrara todo en la pantalla de html
+  muestreo()
 });
 // LISTA
+muestreo()
+
+function muestreo() {
 let elements = productosModificados.map(
   (element) =>
     `<li>
-    <img src="https://raw.githubusercontent.com/Leonardodiaz96/proyecto2-g3/main/img-productos/${element.codigo}.jpg" alt="producto" width="400px" />
-    Producto: ${element.nombre}<br>Precio: ${element.precio}<br>Stock: ${element.stock}<br><br></li>`
+    <img src="https://raw.githubusercontent.com/Leonardodiaz96/proyecto2-g3/dev/img-productos/${element.codigo}.jpg" alt="producto" width="400px" />
+    <br><br>Producto: ${element.nombre}<br>Precio: ${element.precio}<br>Stock: ${element.stock}<br><br></li>`
 );
 ul.innerHTML = elements.join().replaceAll(",", ""); //me mostrara todo en la pantalla de html
+}
