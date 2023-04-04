@@ -18,7 +18,7 @@ let productos = [
   },
   {
     codigo: "vehiculo3",
-    nombre: "llanta original de volkswagen vento",
+    nombre: "Llanta original de volkswagen vento",
     precio: "$13000",
     descripcion: "Tamaño y rodado: 255/70 R16. Aceptamos cualquier metodo de pago",
     categoria: "Accesorios para vehiculos",

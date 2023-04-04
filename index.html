@@ -4,16 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>TucuShop</title>
   </head>
   <body>
+    <header>
+      <div class="container-fluid">
+        <br />
+        <a href="/index.html"
+          ><img
+            src="https://raw.githubusercontent.com/Leonardodiaz96/proyecto2-g3/dev/img-productos/logo.jpg"
+            alt="logo"
+            
+        /></a>
+      </div>
+      <div class="search_container">
+        <input
+          class="d-block"
+          role="search"
+          type="search"
+          size="20"
+          placeholder="Buscar productos, marcas y mas..."
+        />
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </div>
+
+      <nav class="navbar">
+        <div class="navbar_cont">
+          <a href="index.html">Sobre nosotros</a>
+        </div>
+        <div class="navbar_cont">
+          <a href="index.html">Iniciar Sesión</a>
+        </div>
+        <div class="navbar_cont">
+          <a href="index.html"
+            ><img
+              src="https://raw.githubusercontent.com/Leonardodiaz96/proyecto2-g3/dev/img-productos/carrito.png"
+              alt="carrito"
+             
+            />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <br>
     <h1>Productos</h1>
     <label>Categorias</label>
     <select id="categoria"></select>
+    <br><br>
     <ul></ul>
     <script src="index.js"></script>
   </body>
