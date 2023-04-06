@@ -57,12 +57,6 @@ input[type="submit"]:hover {
 	background-color: #8f510a;
 }
 
-#mensaje-error {
-	color: #ED8811;
-	margin-top: 20px;
-	text-align: center;
-}
-
 p{
   text-align: center;
 }
