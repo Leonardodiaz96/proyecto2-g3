@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+    crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/login.css" />
+    <title>TucuShop</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <br />
+        <a href="/index.html"
+          ><img
+            src="https://raw.githubusercontent.com/Leonardodiaz96/proyecto2-g3/dev/img-productos/logo.jpg"
+            alt="logo"
+        /></a>
+      </div>
+    </header>
+    <div class="container">
+		<h1>Inicio de sesión</h1>
+		<form>
+			<label for="email">Correo electrónico:</label>
+			<input type="text" id="email" name="email">
+			<label for="password">Contraseña:</label>
+			<input type="password" id="password" name="password">
+			<input type="submit" onclick="login()" value="Iniciar sesión">	
+		</form>
+		<p>¿Aún no tienes cuenta? <a href="#">Regístrate aquí</a></p>
+	</div>
+    <script src="../javascript/login.js"></script>
+  </body>
+</html>
