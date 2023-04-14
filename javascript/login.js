@@ -8,7 +8,7 @@ form.addEventListener("submit", (event) => {  //realizara un evento en especific
 	let user = arrayUsuarios.find(usuario => usuario.emailActual === email && usuario.passwordActual === password);
 	if (user) {
 		window.location.href = "../index.html";
-		alert("Bienvenido usuario");
+		alert("Bienvenido " + user.nameActual + "!");
 	} else if (email === "elochay24@gmail.com" && password === "4321") {
 		window.location.href = "../pages/admin.html";
 		alert("Bienvenido administrador");
