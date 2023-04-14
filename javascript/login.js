@@ -15,6 +15,7 @@ form.addEventListener("submit", (event) => {  //realizara un evento en especific
 		localStorage.setItem("logged", true);
 	} else {
 		alert("Los datos ingresados son incorrectos");
+		window.location.href = "../pages/login.html";
 	}
 });
 
