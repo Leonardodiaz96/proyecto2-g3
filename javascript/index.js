@@ -1,5 +1,6 @@
 let ul = document.querySelector("ul");
-let productos = [
+let productos = JSON.parse(localStorage.getItem("lista")) || [];
+/*let productos = [
   {
     codigo: "vehiculo1",
     nombre: "Cubierta Michelin",
@@ -72,7 +73,7 @@ let productos = [
     categoria: "Deportes y fitness",
     stock: 56,
   },
-];
+];*/
 let productosModificados = [...productos];//creo un nuevo array sin afectar al nuevo array, ... saca los corchetes
 // SELECT
 let categorias = new Set(); //el set es PARECIDO a un arreglo 

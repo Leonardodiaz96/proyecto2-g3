@@ -89,7 +89,7 @@ color: #000000;
 
 /*----------------------------------------------------*/
 
-/* Estilos para medidas mayores a 1023px */
+
 @media (max-width: 1023px) {
   .search_container {
     display:none;
