@@ -1,0 +1,21 @@
+/* Amarillo #FFFD7E
+Naranja #ED8811
+Negro #000000
+Gris #F5F5F5 */
+
+.texto-precio{
+    text-align: right;
+    justify-content: right;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:  white;
+}
+
+.p-titulo{
+    font-size: xx-large;
+}
