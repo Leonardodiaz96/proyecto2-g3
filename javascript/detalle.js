@@ -50,3 +50,15 @@
 
 //     div.innerHTML = estructura
 //     document.getElementById("datos-producto").appendChild(div)
+
+
+
+
+
+
+
+
+
+
+
+
