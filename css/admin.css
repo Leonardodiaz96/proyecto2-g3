@@ -57,3 +57,25 @@ footer{
     padding-right: 15px;
     opacity: 0.8;
 }
+
+
+  
+  /* Para pantallas más pequeñas de 768px */
+  @media (max-width: 768px) {
+    input {
+      margin-left: 10%;
+      width: 80%;
+      display: block;
+      text-align: center;
+    }
+    table {
+      margin-left: 0;
+      width: 100%;
+    }
+    .primerboton {
+      margin-left: 10%;
+      display: block;
+      width: 80%;
+    }
+  }
+  

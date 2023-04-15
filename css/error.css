@@ -44,24 +44,26 @@ p{
 
 
 
-*{
+* {
     margin: 0;
     border: 0;
 }
 
-
-body{
-    background: rgb(8,28,34);
+body {
+    background: rgb(8, 28, 34);
     margin: 0;
     padding: 0;
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
-    background-image:url(/img-productos/fondo-nosotros.png);
+    background-image: url(/img-productos/fondo-nosotros.png);
 }
-img{
-    width: 600px;
+
+img {
+    max-width: 100%;
+    height: auto;
 }
-.container{
+
+.container {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -69,12 +71,34 @@ img{
     align-items: center;
     justify-content: center;
 }
-h1{
+
+h1 {
     color: black;
     font-size: 20px;
     padding: 20px;
-    background-image:url(/img-productos/fondo-nosotros.png);
+    background-image: url(/img-productos/fondo-nosotros.png);
 }
+
+@media (max-width: 1023px) {
+    img {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    img {
+        max-width: 100%;
+    }
+    h1 {
+        font-size: 18px;
+        padding: 10px;
+    }
+    .btn-lg {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+
 /* button{
     padding: 13px 30px;
     border-radius: 15px;
