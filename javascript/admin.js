@@ -17,7 +17,7 @@ let tbody = document.querySelector("tbody");
 
 const agregarProducto = () => {
     button.addEventListener("click", (event) => { 
-        event.preventDefault();})
+    event.preventDefault();})
     let id = document.querySelector("#id")
     let codigo = document.querySelector("#codigo")
     let categoria = document.querySelector("#categoria")
