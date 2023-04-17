@@ -12,11 +12,12 @@ form.addEventListener("submit", (event) => {  //realizara un evento en especific
 	} else if (email === "elochay24@gmail.com" && password === "4321") {
 		window.location.href = "../pages/admin.html";
 		alert("Bienvenido administrador");
-		localStorage.setItem("logged", true);
+	    localStorage.setItem("logged", yes);
 	} else {
 		alert("Los datos ingresados son incorrectos");
 		window.location.href = "../pages/login.html";
 	}
 });
+
 
 

@@ -95,15 +95,20 @@ select.addEventListener("change", (event) => {
   }
   muestreo()
 });
+
 // LISTA
 muestreo()
 
 function muestreo() {
 let elements = productosModificados.map(
-  (element) =>
+  (element) => 
     `<li>
     <img src="https://raw.githubusercontent.com/Leonardodiaz96/proyecto2-g3/dev/img-productos/${element.codigo}.jpg" alt="producto" width="400px" />
-    <br><br>Producto: ${element.nombre}<br>Precio: ${element.precio}<br>Stock: ${element.stock}<br><br></li>`
+    <br><br>Producto: ${element.nombre}<br>Precio: ${element.precio}<br>Stock: ${element.stock}<br><button onclick="detalles()">Detalle</button><br></li>`
 );
 ul.innerHTML = elements.join().replaceAll(",", ""); //me mostrara todo en la pantalla de html
+}
+const detalles = () => {
+  window.location.href = "../pages/error404.html";
+  
 }

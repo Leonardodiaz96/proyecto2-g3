@@ -25,7 +25,7 @@ const agregarProducto = () => {
     let precio = document.querySelector("#precio")
     let stock = document.querySelector("#stock")
     list.push({id: id.value, codigo: codigo.value, categoria: categoria.value, nombre: nombre.value, precio: precio.value, stock: stock.value})
-    let listaMapeada = list.map(fila => `<tr><td>${fila.id}</td><td>${fila.codigo}</td><td>${fila.categoria}</td><td>${fila.nombre}</td><td>${fila.precio}</td><td>${fila.stock}</td><td><button onclick="editarFila()">Editar</button></td><td><button onclick="eliminarFila(${list.indexOf(fila)})">Eliminar</button></td></tr>`);
+    let listaMapeada = list.map(fila => `<tr><td>${fila.id}</td><td>${fila.codigo}</td><td>${fila.categoria}</td><td>${fila.nombre}</td><td>${fila.precio}</td><td>${fila.stock}</td><td><button onclick="">Detalle</button></td><button onclick="editarFila()">Editar</button></td><td><button onclick="eliminarFila(${list.indexOf(fila)})">Eliminar</button></td></tr>`);
     tbody.innerHTML = listaMapeada.join().replaceAll(",", "")
     localStorage.setItem("lista", JSON.stringify(list));
     id.value = "";
@@ -36,11 +36,11 @@ const agregarProducto = () => {
     stock.value = "";
 }   
 const actualizarTabla = () => {
-    let listaMapeada = list.map((fila, indice) => `<tr><td>${fila.id}</td><td>${fila.codigo}</td><td>${fila.categoria}</td><td>${fila.nombre}</td><td>${fila.precio}</td><td>${fila.stock}</td><td><button onclick="editarFila(${indice})">Editar</button></td><td><button onclick="eliminarFila(${indice})">Eliminar</button></td></tr>`);
+    let listaMapeada = list.map((fila, indice) => `<tr><td>${fila.id}</td><td>${fila.codigo}</td><td>${fila.categoria}</td><td>${fila.nombre}</td><td>${fila.precio}</td><td>${fila.stock}</td><td><button onclick="">Detalle</button></td><td><button onclick="editarFila(${indice})">Editar</button></td><td><button onclick="eliminarFila(${indice})">Eliminar</button></td></tr>`);
     tbody.innerHTML = listaMapeada.join("");
 }
 const editarFila = () => {    
-    let listaMapeada = list.map(fila => `<tr><td contenteditable>${fila.id}</td><td contenteditable>${fila.codigo}</td><td contenteditable>${fila.categoria}</td><td contenteditable>${fila.nombre}</td><td contenteditable>${fila.precio}</td><td contenteditable>${fila.stock}</td><td><button onclick="editarFila()">Editar</button></td><td><button onclick="eliminarFila()">Eliminar</button></td></tr>`);
+    let listaMapeada = list.map(fila => `<tr><td contenteditable>${fila.id}</td><td contenteditable>${fila.codigo}</td><td contenteditable>${fila.categoria}</td><td contenteditable>${fila.nombre}</td><td contenteditable>${fila.precio}</td><td contenteditable>${fila.stock}</td><td><button onclick="">Detalle</button></td><td><button onclick="editarFila()">Editar</button></td><td><button onclick="eliminarFila()">Eliminar</button></td></tr>`);
     tbody.innerHTML = listaMapeada.join().replaceAll(",", "")
 }
 const eliminarFila = (indice) => {
